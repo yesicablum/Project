@@ -1,12 +1,78 @@
-# React + Vite
+Booking Manager
+Una plataforma web para la gestión de reservas, ideal para negocios que operan mediante citas como barberías, clínicas, coworkings, gimnasios y más.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tabla de Contenidos
+Descripción General
 
-Currently, two official plugins are available:
+Problema que Resuelve
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Público Objetivo
 
-## Expanding the ESLint configuration
+Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Funcionalidades Principales
+
+Instalación
+
+Autores
+
+Descripción General
+Booking Manager es una plataforma que permite a los usuarios reservar citas para distintos servicios. El sistema ayuda a mejorar la organización, evitando conflictos de horarios y optimizando la experiencia de los usuarios y administradores.
+
+Problema que Resuelve
+Facilita la administración de reservas en negocios de servicios, ayudando a evitar la sobreposición de citas y permitiendo un control efectivo del flujo de clientes.
+
+Público Objetivo
+Negocios que trabajan bajo citas o reservas, tales como:
+
+Consultorios médicos
+
+Peluquerías
+
+Coworkings
+
+Gimnasios
+
+Entre otros
+
+Tecnologías Utilizadas
+Backend: Django
+
+Frontend: React
+
+Base de datos: PostgreSQL, MySQL, MongoDB
+
+Otros servicios y herramientas: (por definir: Firebase, AWS, Nginx, Redis, OSRM, etc.)
+
+Funcionalidades Principales
+Usuarios
+Registro e inicio de sesión.
+
+Roles de usuario: Cliente y Administrador.
+
+Clientes (Usuarios Finales)
+Ver disponibilidad de horarios.
+
+Reservar una cita.
+
+Editar o cancelar su reserva.
+
+Ver historial de reservas.
+
+Administradores (Dueños del Negocio)
+Gestionar servicios y horarios disponibles.
+
+Aprobar o rechazar reservas.
+
+Consultar todas las reservas desde un panel de administración.
+
+Generar reportes de uso.
+
+Instalación
+Próximamente instrucciones detalladas.
+
+Autores
+Yesica Natalia Blum Carrero - yesica.blum@uniminuto.edu.co
+
+Gabriela Pereira Díaz - gabriela.pereira@uniminuto.edu.co
+
