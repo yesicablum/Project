@@ -34,7 +34,7 @@ Negocios que trabajan bajo citas o reservas, tales como:
 
 *   Backend: Django
 *   Frontend: React
-*   Base de datos: PostgreSQL, MySQL, MongoDB
+*   Base de datos: MySQL, MongoDB
 *   Otros servicios y herramientas: (por definir: Firebase, AWS, Nginx, Redis, OSRM, etc.)
 
 ## Funcionalidades Principales
@@ -56,7 +56,6 @@ Negocios que trabajan bajo citas o reservas, tales como:
 *   Gestionar servicios y horarios disponibles.
 *   Aprobar o rechazar reservas.
 *   Consultar todas las reservas desde un panel de administración.
-*   Generar reportes de uso.
 
 ## Instalación
 
