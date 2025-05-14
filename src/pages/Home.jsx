@@ -13,10 +13,7 @@ function Home() {
                     Plataforma web para la gestión de citas y reservas para todo tipo de negocios como barberías, clínicas, coworkings y más.
                 </p>
 
-                <div className="cta-buttons">
-                    <button className="btn-filled">Regístrate ahora</button>
-                    <button className="btn-outline">Iniciar sesión</button>
-                </div>
+                
 
                 <section className="cards">
                     <Card

@@ -1,10 +1,14 @@
+
+import { Link } from 'react-router-dom';
+import "../App.css"; 
+
 function Header() {
     return (
-        <header>
-            <h1 className="logo">Booking Manager</h1>
+        <header className="header">
+            <Link to="/" className="logo">Booking Manager</Link>
             <div className="auth-buttons">
-                <button className="btn-outline">Login</button>
-                <button className="btn-filled">Register</button>
+                <Link to="/login" className="btn-outline">Login</Link>
+                <Link to="/register" className="btn-filled">Register</Link>
             </div>
         </header>
     );
