@@ -1,5 +1,7 @@
 import { useState } from "react";
 import useStore from "../store/useStore";
+import ServiceCard from "../components/ServiceCard";
+import "../App.css";
 
 const Services = () => {
   const services = useStore((state) => state.services);
@@ -39,25 +41,13 @@ const Services = () => {
       <h2>Servicios Disponibles</h2>
       <div className="services-list">
         {services.map((service) => (
-          <div key={service.id} className="service-card">
-            <h3>{service.name}</h3>
-            <p>Tipo: {service.type}</p>
-            <p>Dirección: {service.address}</p>
-            <p>Servicios ofrecidos:</p>
-            <ul>
-              {service.services.map((s, idx) => (
-                <li key={idx}>{s}</li>
-              ))}
-            </ul>
-            <input
-              type="date"
-              value={selectedDates[service.id] || ""}
-              onChange={(e) => handleDateChange(service.id, e.target.value)}
-            />
-            <button onClick={() => handleBooking(service)}>
-              <span>Reservar</span>
-            </button>
-          </div>
+          <ServiceCard 
+            key={service.id} 
+            service={service} 
+            handleBooking={handleBooking}
+            handleDateChange={handleDateChange}
+            selectedDate={selectedDates[service.id]} 
+          />
         ))}
       </div>
     </main>

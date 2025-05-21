@@ -1,5 +1,7 @@
 import { useState } from "react";
 import useStore from "../store/useStore";
+import AdminServiceCard from "../components/AdminServiceCard";
+import "../App.css";
 
 const AdminServices = () => {
   const services = useStore((state) => state.services);
@@ -84,24 +86,13 @@ const AdminServices = () => {
       </form>
       <div className="admin-services-list">
         {services.map((service) => (
-          <div key={service.id} className="admin-service-card">
-            <h3>{service.name}</h3>
-            <p>Tipo: {service.type}</p>
-            <p>Dirección: {service.address}</p>
-            <p>
-              Servicios:{" "}
-              {Array.isArray(service.services)
-                ? service.services.join(", ")
-                : ""}
-            </p>
-            <button
-              className="btn-outline"
-              onClick={() => removeService(service.id)}
-            >
-              Eliminar Servicio
-            </button>
-          </div>
-        ))}
+  <AdminServiceCard
+    key={service.id}
+    service={service}
+    removeService={removeService}
+  />
+))}
+
       </div>
     </main>
   );

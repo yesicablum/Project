@@ -1,4 +1,7 @@
 import useStore from "../store/useStore";
+import BookingsCard from "../components/BookingsCard";
+
+
 
 const Bookings = () => {
   const bookings = useStore((state) => state.bookings);
@@ -20,23 +23,15 @@ const Bookings = () => {
   );
 
   return (
-    <main className="bookings-container">
+  <main className="bookings-container">
       <h2>Mis Reservas</h2>
       <div className="bookings-list">
         {userBookings.map((booking) => (
-          <div key={booking.id} className="booking-card">
-            <h3>Reserva #{booking.bookingId}</h3>
-            <p>Servicio: {booking.service}</p>
-            <p>Fecha: {booking.date}</p>
-            <p>Hora: {booking.time}</p>
-            <p>Estado: {booking.status}</p>
-            <button
-              className="btn-outline"
-              onClick={() => handleDelete(booking.id)}
-            >
-              Cancelar Reserva
-            </button>
-          </div>
+          <BookingsCard 
+            key={booking.id} 
+            booking={booking} 
+            handleDelete={handleDelete} 
+          />
         ))}
       </div>
     </main>

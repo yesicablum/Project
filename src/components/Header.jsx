@@ -45,7 +45,8 @@ function Header() {
                 </Link>
               </>
             )}
-            <span className="user-name">{currentUser?.name}</span>
+            <span className="btn-outline user-name">{currentUser?.name}</span>
+            
             <button className="btn-outline" onClick={handleLogout}>
               Logout
             </button>
