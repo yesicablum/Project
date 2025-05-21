@@ -6,8 +6,8 @@ import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bookings from "./pages/Bookings";
-import Services from "./pages/Services";
-import Clients from "./pages/Clients";
+//import Services from "./pages/Services";
+//import Clients from "./pages/Clients";
 import AdminServices from "./pages/AdminServices";
 
 function App() {
